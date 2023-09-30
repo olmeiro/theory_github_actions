@@ -1,5 +1,4 @@
 name: Aprendiendo GitHub Actions
-run-name: ¡Estoy aprendiendo GitHub Actions!
 on: [push]
 jobs:
   hola-mundo:
@@ -11,3 +10,4 @@ jobs:
         run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - name: Correr script
         run: python hola_mundo.py
+
